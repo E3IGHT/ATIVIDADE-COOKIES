@@ -12,4 +12,4 @@ code {
     monospace;
 }
 
-* { padding: 2em }
+* { box-sizing: border-box; }
