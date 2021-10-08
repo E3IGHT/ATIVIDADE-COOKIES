@@ -4,7 +4,8 @@ const BBBB = styled.div `
 
     padding: 3em 3em;
     background-color: black;
-    max-height: 100vh;
+    width: 100% 100%;
+    max-height: 100%;
     max-width: 100vw;
     color: white;
 

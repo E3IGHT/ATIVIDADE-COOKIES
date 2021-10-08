@@ -5,9 +5,23 @@ import { useState } from "react";
 
 export default function ProductItem (props) {
     const[produto, setProduto] = useState(props.info);
+    const[qtd, setQtd] = useState(1);
 
     function remover() {
         props.onRemove(produto.id);
+    }
+
+    function mais () {
+        if( qtd === 10 )
+        return;
+        setQtd(qtd + 1);
+    }
+
+    function menos () {
+        if(qtd === 0 )
+        return;
+
+        setQtd(qtd - 1);
     }
 
     return (
@@ -17,9 +31,9 @@ export default function ProductItem (props) {
                             <img src={produto.imagem} alt="" width= "100px" height="100px" />
                         </div>
                         <Calculadora>
-                            <button class="calc"> - </button>
-                            <div class="number"> 1 </div>
-                            <button class="calc"> + </button>
+                            <button class="calc" onClick={menos}> - </button>
+                            <div class="number"> {qtd} </div>
+                            <button class="calc" onClick={mais}> + </button>
                         </Calculadora>
                     </div>
                     <div class="product-title"> {produto.titulo} </div>
@@ -29,7 +43,7 @@ export default function ProductItem (props) {
                     </div>
                     <div class="qtd">
                         <div class="qtd-title"> Quant. : </div>
-                        <div class="qtd-value"> 1 </div>
+                        <div class="qtd-value"> {qtd} </div>
                     </div>
 
                     <div class="trash">
