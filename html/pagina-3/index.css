@@ -46,11 +46,6 @@ body { margin: 0px; }
 
 }
 
-.calculator {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
 
 .calc {
 

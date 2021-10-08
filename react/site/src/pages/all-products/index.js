@@ -45,7 +45,7 @@ export default function Home () {
         </div>
         <div class="boxes">
             {produtos.map(item =>
-               <Product info={item} />
+               <Product key={item.id} info={item} />
             )}
         </div>
     </BB1>

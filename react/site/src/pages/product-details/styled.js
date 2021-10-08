@@ -17,7 +17,7 @@ const BB4 = styled.div `
     text-align: center;
     font-size: 3em;
 
-    margin-bottom: 3em;
+    margin-bottom: 2em;
 }
 
 .boxes {

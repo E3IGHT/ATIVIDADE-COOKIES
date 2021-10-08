@@ -5,6 +5,7 @@ import Home from './pages/all-products/index'
 
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Detalhes from './pages/product-details';
+import Carr from './pages/buy'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.render(
       <Switch>
           <Route path="/" exact={true} component={Home} />
           <Route path="/detalhes" component={Detalhes}/>
+          <Route path="/carrinho" component={Carr} />
       </Switch>
     </BrowserRouter>
   </React.StrictMode>,
