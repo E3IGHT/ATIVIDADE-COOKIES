@@ -39,6 +39,7 @@ const Buttons = styled.div`
     border: 2px solid purple;
     border-radius: 0.2em;
     cursor: pointer;
+    text-decoration: none;
 `
 
 
